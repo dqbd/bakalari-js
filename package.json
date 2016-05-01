@@ -1,0 +1,16 @@
+{
+  "name": "bakalari",
+  "version": "1.0.0",
+  "description": "API pro IS Bakaláři",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Duong",
+  "license": "MIT",
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "node-fetch": "^1.5.1",
+    "xml2js": "^0.4.16"
+  }
+}
