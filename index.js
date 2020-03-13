@@ -80,7 +80,7 @@ class User extends DataSource {
 		sha.update(input.replace(/\r?\n|\r/g, ""), "utf-8")
 
 		let hash = sha.digest("base64")
-		return (safe === true) ? hash.replace(/[\\|/]/g, '_').replace('+', '-') : hash
+		return (safe === true) ? hash.replace(/[\\|/]/g, '_').replace(/\+/g, '-') : hash
 	}
 
 	login(pass) {
